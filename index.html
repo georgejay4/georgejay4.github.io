@@ -1,22 +1,19 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-<title> Electrofunk Jamboree </title>  
-
-
-  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electrofunk Jamboree</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             background-color: #DEC1FF;
             margin: 0;
+            padding: 0;
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            min-height: 100vh;
         }
         .container {
             background-color: white;
@@ -24,6 +21,8 @@
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
             padding: 20px;
             text-align: center;
+            width: 80%;
+            max-width: 400px;
         }
         .profile-img {
             width: 100px;
@@ -39,6 +38,8 @@
         .social-links {
             display: flex;
             justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 20px;
         }
         .social-links a {
             display: inline-block;
@@ -46,13 +47,14 @@
             color: #333;
             margin: 10px;
             font-size: 18px;
+            transition: color 0.3s ease;
+        }
+        .social-links a:hover {
+            color: #6B3AFF;
         }
     </style>
 </head>
-
 <body>
-
-  
     <div class="container">
         <img src="profile.jpg" alt="Profile Picture" class="profile-img">
         <div class="username">John Doe</div>
@@ -63,8 +65,5 @@
             <a href="https://linkedin.com/in/johndoe" target="_blank">LinkedIn</a>
         </div>
     </div>
-
-
-
 </body>
 </html>
