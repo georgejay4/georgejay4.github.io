@@ -1,16 +1,74 @@
 <html>
 <head>
 
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
 <title> Electrofunk Jamboree </title>  
-  
-</head>
-  
-<body style="background-color:#DEC1FF;">
 
+
+  
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #DEC1FF;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+        }
+        .profile-img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+        .username {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .social-links {
+            display: flex;
+            justify-content: center;
+        }
+        .social-links a {
+            display: inline-block;
+            text-decoration: none;
+            color: #333;
+            margin: 10px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body>
 
 <marquee>
 <h1> Coming Soon! </h1>
-
 </marquee>
+
+  
+    <div class="container">
+        <img src="profile.jpg" alt="Profile Picture" class="profile-img">
+        <div class="username">John Doe</div>
+        <div class="social-links">
+            <a href="https://twitter.com/johndoe" target="_blank">Twitter</a>
+            <a href="https://instagram.com/johndoe" target="_blank">Instagram</a>
+            <a href="https://facebook.com/johndoe" target="_blank">Facebook</a>
+            <a href="https://linkedin.com/in/johndoe" target="_blank">LinkedIn</a>
+        </div>
+    </div>
+
+
+
 </body>
 </html>
