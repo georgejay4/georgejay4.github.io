@@ -16,17 +16,14 @@
             min-height: 100vh;
             color: white; /* Set text color to white */
             background: radial-gradient(circle, #8E43ED, #03eaff, #FFD700);
-            animation: gradientAnimation 5s infinite;
+            animation: gradientAnimation 15s infinite;
         }
         @keyframes gradientAnimation {
-            0% {
+            0%, 100% {
                 background: radial-gradient(circle, #8E43ED, #03eaff, #FFD700);
             }
             50% {
                 background: radial-gradient(circle, #03eaff, #FFD700, #8E43ED);
-            }
-            100% {
-                background: radial-gradient(circle, #FFD700, #8E43ED, #03eaff);
             }
         }
         .container {
@@ -36,7 +33,6 @@
             text-align: center;
             width: 90%;
             max-width: 400px;
-            animation: reverseGradientAnimation 10s infinite alternate;
         }
         .profile-img {
             width: 150px; /* Adjust the width and height as needed */
