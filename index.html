@@ -11,7 +11,7 @@
             margin: 0;
             padding: 0;
             display: flex;
-            justify-content: center;
+            flex-direction: column;
             align-items: center;
             min-height: 100vh;
             color: white;
@@ -34,6 +34,21 @@
             }
             100% {
                 background-color: #8E43ED;
+            }
+        }
+        .marquee {
+            width: 100%;
+            background: linear-gradient(to right, purple, orange);
+            text-align: center;
+            font-size: 20px;
+            animation: marqueeAnimation 10s linear infinite;
+        }
+        @keyframes marqueeAnimation {
+            0% {
+                transform: translateX(100%);
+            }
+            100% {
+                transform: translateX(-100%);
             }
         }
         .container {
@@ -79,6 +94,7 @@
     </style>
 </head>
 <body>
+    <div class="marquee">Yes Yes Raving Crew</div>
     <div class="container">
         <img src="static/EJLogo.png" alt="Profile Picture" class="profile-img">
         <div class="username">Electrofunk Jamboree</div>
